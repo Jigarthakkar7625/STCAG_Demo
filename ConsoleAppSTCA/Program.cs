@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -7,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppSTCA
 {
-    internal class Program
+    public class Program
     {
+
         static void Main(string[] args)
         {
+            Class1 class1 = new Class1();
+
+            int num1 = 20;
+            int num2;
+
             int a = 10;
 
             string temp = "Jigar";
@@ -21,8 +28,8 @@ namespace ConsoleAppSTCA
             string result1 = String.Concat(temp, temp1);
 
 
-            string result123 = "This is " + a + "Hello";
-            string result1234 = $"This is {a} Hello"; // String interpolation
+            //string result123 = "This is " + a + "Hello";
+            //string result1234 = $"This is {a} Hello"; // String interpolation
 
 
             var IndexOf = temp.IndexOf("g");
@@ -87,10 +94,17 @@ namespace ConsoleAppSTCA
 
             ////Console.WriteLine(employee.Name);
 
+            int[] abcc = new int[3];
+            abcc[0] = 2;
+
+
+            ////Adding elements to ArrayList using Add() method
+            //ArrayList arrayList1 = new ArrayList();
+
 
 
             /////Call by referece
-            //FunctionTestReferece(ref a);
+            FunctionTestReferece(ref a );
             //Console.WriteLine(a);
 
             //FunctionTestReferece(ref employee);
